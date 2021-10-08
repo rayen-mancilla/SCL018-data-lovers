@@ -1,12 +1,14 @@
 import { example } from './data.js';
+    
+import data from './data/athletes/athletes.js';
 
 //import athletes from './data/athletes/athletes.js';
 //import data from './data/athletes/athletes.json';
 // import data from './data/rickandmorty/rickandmorty.js';
 fetch('./data/athletes/athletes.json')
-   .then(resp => resp.json())
-   .then(data=> data);
- console.log(data);
+  .then(resp => resp.json())
+  .then(data=> data);
+console.log(data);
 
 //const athlete= data.athletes;
 //crear filtro 
@@ -22,7 +24,7 @@ fetch('./data/athletes/athletes.json')
 //</ol>
 //</div>`;
 //}
- 
+
 //const femaleMedal = femaleAthletes.filter(athlete =>athlete.medal=="Gold");
 
 
@@ -42,10 +44,11 @@ fetch('./data/athletes/athletes.json')
   //.then(response => response.json())
   //.then(data => console.log(data));
 
-    
-import data from './data/athletes/athletes.js';
 
-const athletes= data.athletes;
+
+//Esto es lo que yo tenía antes de bajar lo de Sara
+
+/*const athletes= data.athletes;
 let femaleAthletes = athletes.filter(athlete => athlete.gender=="F" );
 console.log(femaleAthletes);
 
@@ -55,19 +58,19 @@ console.log("athletes",athletes);
 const bringDiv= document.getElementById("root");
 
 const drawCard= (athlete)=>{
- 
+
   return ` <div>
- <ol>
-   <li>Nombre:${athlete.name}</li>
-   <li>Edad: ${athlete.age}</li>
-   <li>Altura: ${athlete.height}</li>
-   <li>Deporte: ${athlete.sport}</li>
- </ol>
+  <ol>
+  <li>Nombre:${athlete.name}</li>
+  <li>Edad: ${athlete.age}</li>
+  <li>Altura: ${athlete.height}</li>
+  <li>Deporte: ${athlete.sport}</li>
+</ol>
 </div>`;
 }
 for(let i=0; i<20; i++){
- bringDiv.innerHTML+= drawCard(athletes[i]);
-}
+bringDiv.innerHTML+= drawCard(athletes[i]);
+}*/
 
 
 
