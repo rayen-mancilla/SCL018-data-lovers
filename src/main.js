@@ -7,7 +7,7 @@ fetch('./data/athletes/athletes.json')
    .then(resp => resp.json())
    .then(data=> data);
  console.log(data);
- 
+
 //const athlete= data.athletes;
 //crear filtro 
 //let femaleAthletes = athlete.filter(athlete => athlete.gender=="F");
