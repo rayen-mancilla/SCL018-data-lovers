@@ -1,10 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 body{
-    background-image: url("data/athletes/imagenes_athletes/rio_fondo2.jpg");
+    background-image: url("data/athletes/imagenes_athletes/rio_fondo.jpg");
     display: flex;
 }
 header  {
@@ -16,6 +14,7 @@ header  {
     width: 100%;
     align-items: center;
     font-size: 60px;}
+
 .contenido{
     padding-top: 8rem;
     display: flex;
@@ -26,34 +25,34 @@ header  {
     justify-content: space-around;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    }
+    
+    .buttons{
+    display: flex;
+    justify-content:space-around;
 }
-.root{
-    background-color: olive;
+.womenAthletes{
+    background-color:rgb(179, 134, 179);
     border: black;
-    display: block;
     justify-content: center;
 }
-.root1{
+.goldMedal{
     background-color:cadetblue;
     border: black;
-    display: block;
     justify-content: center;
 }
-.root2{
-    background-color:cadetblue;
+.silverMedal{
+    background-color:rgb(179, 134, 179);
     border: black;
-    display: block;
     justify-content: center;
 }
-.buttons{
-    display: block;
-    justify-content: center;
-}
+
 .btnA{
-    background: rgb(121, 170, 88);;
+    background:rgb(179, 134, 179);
     padding: 5px 15px; 
     justify-content:center ;
     border-radius: 50px;
+    border:2px solid;
 }
 #imgbtnA{
    
@@ -73,7 +72,7 @@ header  {
     display:inline-block;
     padding: 5px 15px;
     color:white;
-    background:  rgb(121, 170, 88);;
+    background:rgb(179, 134, 179);
     letter-spacing: 3px;
     text-align: center;
     text-decoration: none;
@@ -84,17 +83,18 @@ header  {
     border: none;
 }
 .btnM{
-    background:  rgb(121, 170, 88);;
+    background:rgb(179, 134, 179);
     padding: 5px 15px; 
     justify-content:center ;
     border-radius: 50px;
+    border:2px solid
 }
 .button2{
     position: center;
     display:inline-block;
     padding: 5px 15px;
     color:white;
-    background: rgb(121, 170, 88);;
+    background:rgb(179, 134, 179);
     letter-spacing: 3px;
     text-align: center;
     text-decoration: none;
@@ -105,17 +105,18 @@ header  {
     border: none;
 }
 .btnPP{
-    background: rgb(121, 170, 88);
+    background:rgb(179, 134, 179);
     padding: 5px 15px; 
     justify-content:center ;
     border-radius: 50px;
+    border:2px solid;
 }
 .button3{
     position: center;
     display:inline-block;
     padding: 5px 15px;
     color:white;
-    background: rgb(121, 170, 88);
+    background:rgb(179, 134, 179);
     letter-spacing: 3px;
     text-align: center;
     text-decoration: none;

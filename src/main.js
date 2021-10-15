@@ -1,13 +1,28 @@
 
 import {} from './data.js';
 import data from './data/athletes/athletes.js';
-  
+//Creating the function that shows first page
+let showButtons=document.getElementById("buttons");
+showButtons.style.display="block";
+
+let hideInformation=document.getElementById("information");
+hideInformation.style.display="none"
+
+//Giving functionality to the buttons
+let showingAtheletes=document.getElementById("athletesWomen")
+showingAtheletes.addEventListener("click",showThem);
+function showThem(){
+  showButtons.style.display="none";
+  showingAtheletes.style.display="block";
+}
+
+
     //const femaleMedal = femaleAthletes.filter(athlete =>athlete.medal=="Gold");
-        const athletes= document.getElementById("root");
+        const athletes= document.getElementById("womenAthletes");
         let femaleAthletes=  data.athletes.filter(athlete => athlete.gender=="F");
-        console.log(femaleAthletes);
+        
         //const femaleMedal = femaleAthletes.filter(athlete =>athlete.medal=="Gold");
-        const bringDiv=document.getElementById("root")
+        const bringDiv=document.getElementById("womenAthletes")
         const drawCard=(femaleAthletes)=>{
         return `<div>
         <ol>
@@ -23,7 +38,7 @@ import data from './data/athletes/athletes.js';
         }
       const femaleMedalGold= femaleAthletes.filter(athletes=>athletes.medal=="Gold");
       console.log(femaleMedalGold);
-      const bringDiv1=document.getElementById("root1");
+      const bringDiv1=document.getElementById("goldMedal");
       const drawCard1=( femaleMedalGold)=>{
       return `<div>
       <ol>
@@ -39,7 +54,7 @@ import data from './data/athletes/athletes.js';
       }
       const femaleMedalSilver= femaleAthletes.filter(athletes=>athletes.medal=="Silver");
       console.log(femaleMedalSilver);
-      const bringDiv2=document.getElementById("root2");
+      const bringDiv2=document.getElementById("silverMedal");
       const drawCard2=(femaleMedalSilver)=>{
       return `<div>
       <ol>
