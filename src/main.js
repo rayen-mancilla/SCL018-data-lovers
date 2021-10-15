@@ -1,3 +1,4 @@
+
 import {} from './data.js';
 import data from './data/athletes/athletes.js';
   
@@ -52,5 +53,4 @@ import data from './data/athletes/athletes.js';
       for(let i=0; i<50; i++){
       bringDiv2.innerHTML+= drawCard2(femaleMedalSilver[i]);
       }
-    
 
