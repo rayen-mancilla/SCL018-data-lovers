@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("data/athletes/imagenes_athletes/rio_fondo2.jpg");
+    display: flex;
+}
+header  {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+    font-size: 60px;}
+.contenido{
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: initial;
+    width: 600vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.root{
+    background-color: olive;
+    border: black;
+    display: block;
+    justify-content: center;
+}
+.root1{
+    background-color:cadetblue;
+    border: black;
+    display: block;
+    justify-content: center;
+}
+.root2{
+    background-color:cadetblue;
+    border: black;
+    display: block;
+    justify-content: center;
+}
+.buttons{
+    display: block;
+    justify-content: center;
+}
+.btnA{
+    background: rgb(121, 170, 88);;
+    padding: 5px 15px; 
+    justify-content:center ;
+    border-radius: 50px;
+}
+#imgbtnA{
+   
+    display: flex;
+    width: 100px;
+    height:100px;
+    padding: 0px;  
+    border-radius: 100%;
+    justify-content: space-between;
+
+}
+#natacion{
+    border-radius: 100px;
+}
+.button1{
+    position: center;
+    display:inline-block;
+    padding: 5px 15px;
+    color:white;
+    background:  rgb(121, 170, 88);;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:consola ;
+    overflow: hidden;  
+    border-radius: 75px;
+    border: none;
+}
+.btnM{
+    background:  rgb(121, 170, 88);;
+    padding: 5px 15px; 
+    justify-content:center ;
+    border-radius: 50px;
+}
+.button2{
+    position: center;
+    display:inline-block;
+    padding: 5px 15px;
+    color:white;
+    background: rgb(121, 170, 88);;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:consola ;
+    overflow: hidden;
+    border-radius: 75px;
+    border: none;
+}
+.btnPP{
+    background: rgb(121, 170, 88);
+    padding: 5px 15px; 
+    justify-content:center ;
+    border-radius: 50px;
+}
+.button3{
+    position: center;
+    display:inline-block;
+    padding: 5px 15px;
+    color:white;
+    background: rgb(121, 170, 88);
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:consola ;
+    overflow: hidden;
+    border-radius: 75px;
+    border: none;
+}

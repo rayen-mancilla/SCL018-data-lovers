@@ -1,73 +1,56 @@
-import { example } from './data.js';
-
-//import athletes from './data/athletes/athletes.js';
-//import data from './data/athletes/athletes.json';
-// import data from './data/rickandmorty/rickandmorty.js';
-fetch('./data/athletes/athletes.json')
-   .then(resp => resp.json())
-   .then(data=> data);
- console.log(data);
-
-//const athlete= data.athletes;
-//crear filtro 
-//let femaleAthletes = athlete.filter(athlete => athlete.gender=="F");
-//console.log(femaleAthletes);
-//crear una funcion que reciba a los atletas y genera la informacion para llamar a los valores contenidos
-//const div = document.getElementById("root");
-//const drawCard = (athlete)=>{
-
-//div.innerHTML += ` <div>
-//<ol>
-  //<li>Nombre:${athlete.name}</li>
-//</ol>
-//</div>`;
-//}
- 
-//const femaleMedal = femaleAthletes.filter(athlete =>athlete.medal=="Gold");
-
-
-    
-fetch('./data/athletes/athletes.json')
-   .then(resp => resp.json())
-   .then(data=> console.log(data));
-
- 
-   
-    
-  // fetch('/readme.txt')
-  // .then(response => response.text())
-  // .then(data => console.log(data));
-
-  //fetch('http://example.com/movies.json')
-  //.then(response => response.json())
-  //.then(data => console.log(data));
-
-    
+import {} from './data.js';
 import data from './data/athletes/athletes.js';
-
-const athletes= data.athletes;
-let femaleAthletes = athletes.filter(athlete => athlete.gender=="F" );
-console.log(femaleAthletes);
-
-
-console.log("athletes",athletes); 
-
-const bringDiv= document.getElementById("root");
-
-const drawCard= (athlete)=>{
- 
-  return ` <div>
- <ol>
-   <li>Nombre:${athlete.name}</li>
-   <li>Edad: ${athlete.age}</li>
-   <li>Altura: ${athlete.height}</li>
-   <li>Deporte: ${athlete.sport}</li>
- </ol>
-</div>`;
-}
-for(let i=0; i<20; i++){
- bringDiv.innerHTML+= drawCard(athletes[i]);
-}
-
-
+  
+    //const femaleMedal = femaleAthletes.filter(athlete =>athlete.medal=="Gold");
+        const athletes= document.getElementById("root");
+        let femaleAthletes=  data.athletes.filter(athlete => athlete.gender=="F");
+        console.log(femaleAthletes);
+        //const femaleMedal = femaleAthletes.filter(athlete =>athlete.medal=="Gold");
+        const bringDiv=document.getElementById("root")
+        const drawCard=(femaleAthletes)=>{
+        return `<div>
+        <ol>
+          <li>Nombre:${femaleAthletes.name}</li>
+          <li>Edad:${femaleAthletes.age}</li> 
+          <li>Pais:${femaleAthletes.team}</li>
+          <li>Deporte:${femaleAthletes.sport}</li> 
+        </ol> 
+        </div>`
+        }
+        for(let i=0; i<50; i++){
+        bringDiv.innerHTML+= drawCard(femaleAthletes[i]);
+        }
+      const femaleMedalGold= femaleAthletes.filter(athletes=>athletes.medal=="Gold");
+      console.log(femaleMedalGold);
+      const bringDiv1=document.getElementById("root1");
+      const drawCard1=( femaleMedalGold)=>{
+      return `<div>
+      <ol>
+        <li>Nombre:${femaleMedalGold.name}</li>
+        <li>Edad:${femaleMedalGold.age}</li> 
+        <li>Pais:${femaleMedalGold.team}</li>
+        <li>Deporte:${femaleMedalGold.sport}</li> 
+      </ol> 
+      </div>`
+      }
+      for(let i=0; i<50; i++){
+      bringDiv1.innerHTML+= drawCard1(femaleMedalGold[i]);
+      }
+      const femaleMedalSilver= femaleAthletes.filter(athletes=>athletes.medal=="Silver");
+      console.log(femaleMedalSilver);
+      const bringDiv2=document.getElementById("root2");
+      const drawCard2=(femaleMedalSilver)=>{
+      return `<div>
+      <ol>
+        <li>Nombre:${femaleMedalSilver.name}</li>
+        <li>Edad:${femaleMedalSilver.age}</li> 
+        <li>Pais:${femaleMedalSilver.team}</li>
+        <li>Deporte:${femaleMedalSilver.sport}</li> 
+      </ol> 
+      </div>`
+      }
+      for(let i=0; i<50; i++){
+      bringDiv2.innerHTML+= drawCard2(femaleMedalSilver[i]);
+      }
+    
 
